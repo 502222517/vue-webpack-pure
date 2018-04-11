@@ -42,6 +42,12 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 	const Tab = r => require.ensure([], () => r(require('views/tab.vue')), 'index');
 这两个vue文件会合并成一个index.vue 文件。
 
+# browserslist 浏览器兼容，根据需要配置
+"iOS >= 7",
+"Android > 4.1",
+"Firefox > 20",
+"last 5 versions"
+
 # eslint 检查
 这个检查很严格，如果不想启用，注释build/webpack.base.conf.js 中的 eslint-loader。
 
